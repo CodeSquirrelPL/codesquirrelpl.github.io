@@ -1,0 +1,92 @@
+body {
+  font-family: sans-serif;
+  margin: 5vmin;
+}
+
+nav {
+  text-align: left;
+  border-top: 2px solid #888;
+  border-bottom: 2px solid #888;
+  padding: 0.5em;
+  margin: 2rem 0;
+}
+
+h1, h2, h3 {
+  font-family: serif;
+}
+
+h2 {
+  text-align: center;
+}
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+section {
+  margin: 3rem 0;
+  text-align: center;
+}
+
+ul {
+  padding: 0;
+  list-style: none inside none;
+}
+
+.header__title {
+  background: -webkit-linear-gradient(45deg, #000, gray 70%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: smaller;
+}
+
+.section-container {
+  display: flex;
+  justify-content: center;
+  align-content: stretch;
+  flex-flow: row wrap;
+}
+
+.section-container__block {
+  /*border: 1px solid #cccccc;*/
+  background-color: #eee;
+  padding: 2rem;
+  margin: 1rem;
+  flex: 1 1 0;
+  text-align: center;
+}
+
+.ssection-container__block--project {
+  border-color: white;
+}
+/*
+.section-container__block--project:hover, :focus {
+  border-color: #cccccc;
+  color: blue;
+  cursor: pointer;
+}*/
+
+.nav__button:hover, :focus {
+  color: blue;
+}
+
+.project__links {
+  padding-top: 0.5em;
+}
+
+.project__link:hover, :focus {
+  color: blue;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+}
+
+@media all and (max-width: 550px) {
+  .section-container {
+    flex-direction: column;
+  }
+}
