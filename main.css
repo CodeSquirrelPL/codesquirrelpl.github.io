@@ -1,5 +1,5 @@
 body {
-  font-family: sans-serif;
+  font-family: 'Livvic', sans-serif;
   margin: 5vmin;
 }
 
@@ -11,12 +11,16 @@ nav {
   margin: 2rem 0;
 }
 
-h1, h2, h3 {
-  font-family: serif;
+h1 {
+  font-family: sans-serif;
 }
 
 h2 {
   text-align: center;
+}
+
+h4 {
+  margin: 0;
 }
 
 a {
