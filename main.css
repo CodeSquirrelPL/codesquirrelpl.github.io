@@ -1,22 +1,63 @@
 body {
   font-family: 'Livvic', sans-serif;
-  margin: 5vmin;
+  margin: 0;
+  color: #020E1A;
+}
+
+header {
+  background-image: url('abstract-background.svg');
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-color: #020E1A;
+  background-size: cover;
+  padding: 5vmin;
+  color: white;
+}
+
+.header__title {
+  text-align: left;
+  margin-left: 1rem;
+  font-style: normal;
+  font-size: 1.5em;
 }
 
 nav {
   text-align: left;
-  border-top: 2px solid #555;
-  border-bottom: 2px solid #555;
+  /*border-top: 1px solid white;
+  border-bottom: 1px solid white;
   padding: 0.5em;
-  margin: 2rem 0;
+  margin: 2rem 0;*/
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.nav__button {
+    padding: 1rem;
+
+}
+
+h1 {
+  margin-left: 1rem;
+  font-size: xxx-large;
 }
 
 h2 {
   text-align: center;
+  font-size: xx-large;
+  margin-top: 3rem;
+}
+
+h3 {
+  margin-bottom: 0;
+  width: 100%;
 }
 
 h4 {
   margin: 0;
+}
+
+ul > h3 {
+  margin-bottom: 2rem;
 }
 
 a {
@@ -25,21 +66,14 @@ a {
 }
 
 section {
-  margin: 3rem 0;
+  padding: 1rem 0;
   text-align: center;
 }
 
 ul {
-  padding: 0;
+  margin-top: 1rem;
+  padding-left: 0;
   list-style: none inside none;
-}
-
-.header__title {
-  background: -webkit-linear-gradient(45deg, #000, gray 70%);
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: smaller;
 }
 
 .section-container {
@@ -47,23 +81,51 @@ ul {
   justify-content: center;
   align-content: stretch;
   flex-flow: row wrap;
+  padding: 3vw;
+  padding-top: 1vw;
+}
+
+.section-container.skills {
+  width: 80vw;
+  margin: auto;
+  justify-content: center;
 }
 
 .section-container__block {
-
   padding: 2rem;
   margin: 1rem;
-  flex: 1 1 0;
+  flex: 1 1 15vw;
   text-align: center;
+  border-radius: 1vmin;
+}
+
+ .section-container__block--main-skills {
+   display: block;
+   color: white;
+   background-color: #032A39;
+ }
+
+.section-container__block--skills {
+  flex: 0.4 1;
+  margin: 2vw;
 }
 
 .section-container__block--project {
   border-color: white;
+  background-color: white;
+  color: #020E1A;
+  min-width: 200px;
 }
 
 
 .nav__button:hover, :focus {
-  color: blue;
+  color: #020E1A;
+  background-color: white;
+}
+
+#projekty {
+  background-color: #032A39;
+  color: white;
 }
 
 .project__links {
@@ -77,6 +139,7 @@ ul {
 
 footer {
   text-align: center;
+  padding: 1rem;
 }
 
 @media all and (max-width: 550px) {

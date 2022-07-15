@@ -6,32 +6,43 @@
     <title>Portfolio - Nikita Filipiak</title>
     <link href="https://fonts.googleapis.com/css?family=Bubblegum+Sans|Livvic&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css" type="text/css" />
+    <script src="https://kit.fontawesome.com/a1fb137591.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <header><h1>Nikita Filipiak <span class="header__title"> | Junior Front-End Developer</span></h1></header>
+    <header><h1>Nikita Filipiak</h1><h2 class="header__title"> Junior Front-End Developer</h2>
     <nav>
-      <a href="#skills" class='nav__button'>umiejętności</a> |
-      <a href="#projekty" class='nav__button'>projekty</a> |
-      <a href="https://linkedin.com/in/nikita-filipiak" target="_blank"  class='nav__button'>linkedin</a> |
+      <a href="#skills" class='nav__button'>umiejętności</a>
+      <a href="#projekty" class='nav__button'>projekty</a>
+      <a href="https://linkedin.com/in/nikita-filipiak" target="_blank"  class='nav__button'>linkedin</a>
       <a href="https://github.com/CodeSquirrelPL" target="_blank" class='nav__button'>github</a>
     </nav>
+    </header>
     <section id="skills">
       <h2>Umiejętności</h2>
-      <div class="section-container skills">
-      <div class="section-container__block">
-        <h4>Znam dobrze</h4>
-        <ul>
-          <li>Vanilla JS</li>
-          <li>CSS</li>
-          <li>HTML5</li>
-          <li>PHP</li>
-          <li>MySQL</li>
-          <li>BEM</li>
-          <li>Git</li>
-          <li>RWD</li>
+      <div>
+
+        <ul class="section-container">
+        <h3>Znam dobrze</h3>
+          <li class="section-container__block section-container__block--main-skills">
+            <i class="fa-brands fa-js-square fa-6x"></i><p>Vanilla JS</p></li>
+          <li class="section-container__block section-container__block--main-skills">
+            <i class="fa-brands fa-css3-alt fa-6x"></i><p>CSS</p></li>
+          <li class="section-container__block section-container__block--main-skills">
+            <i class="fa-brands fa-html5 fa-6x"></i><p>HTML5</p></li>
+          <li class="section-container__block section-container__block--main-skills">
+            <i class="fa-brands fa-php fa-6x"></i><p>PHP</p></li>
+          <li class="section-container__block section-container__block--main-skills">
+            <i class="fa-solid fa-database fa-6x"></i><p>MySQL</p></li>
+          <li class="section-container__block section-container__block--main-skills">
+            <i class="fa-solid fa-sitemap fa-6x"></i><p>BEM</p></li>
+          <li class="section-container__block section-container__block--main-skills">
+            <i class="fa-brands fa-github fa-6x"></i><p>Git</p></li>
+          <li class="section-container__block section-container__block--main-skills">
+            <i class="fa-solid fa-mobile-screen fa-6x"></i><p>RWD</p></li>
         </ul>
       </div>
-      <div class="section-container__block">
+      <div class="section-container skills">
+        <div class="section-container__block--skills">
         <h4>Miałam okazję używać</h4>
         <ul>
           <li>jQuery</li>
@@ -42,7 +53,7 @@
           <li>WCAG 2.0</li>
         </ul>
       </div>
-      <div class="section-container__block">
+      <div class="section-container__block--skills">
         <h4>Uczę się od niedawna</h4>
         <ul>
           <li>React.JS</li>
@@ -55,21 +66,24 @@
       <h2>Projekty</h2>
       <div class="section-container showcase">
         <div class="section-container__block section-container__block--project">
-          Rozbudowana aplikacja sieciowa do gry w starożytną planszówkę</br><small>(HTML5, JS, jQuery, AJAX, PHP, CSS)</small>
+          <i class="fa-solid fa-chess fa-2xl"></i></br>
+          <h3>Rozbudowana aplikacja sieciowa do gry w starożytną planszówkę</h3><small>(HTML5, JS, jQuery, AJAX, PHP, CSS)</small>
             <div class="project__links">
               <a class="project__link" href="http://hnefatafl.pl/" target="_blank">Wypróbuj</a> |
               <a class="project__link" href="https://github.com/CodeSquirrelPL/hnefatafl" target="_blank">GitHub</a>
             </div>
         </div>
         <div href="http://hnefatafl.pl/peritus" target="_blank" class="section-container__block section-container__block--project">
-          Responsywna strona-wizytówka dla biura tłumaczeń</br><small>(HTML5, CSS, Bootstrap)</small>
+          <i class="fa-solid fa-address-card fa-2xl"></i>
+          <h3>Responsywna strona-wizytówka dla biura tłumaczeń</h3><small>(HTML5, CSS, Bootstrap)</small>
           <div class="project__links">
             <a class="project__link" href="https://codesquirrelpl.github.io/peritus" target="_blank">Zobacz</a> |
             <a class="project__link" href="https://github.com/CodeSquirrelPL/peritus" target="_blank">GitHub</a>
           </div>
         </div>
         <div href="" class="section-container__block section-container__block--project">
-          Minimalistyczne portfolio - strona, którą przeglądasz</br><small>(HTML5, CSS)</small>
+          <i class="fa-solid fa-user fa-2xl"></i>
+          <h3>Minimalistyczne portfolio - strona, którą przeglądasz</h3><small>(HTML5, CSS)</small>
           <div class="project__links">
             <a href="https://github.com/CodeSquirrelPL/codesquirrelpl.github.io" target="_blank" class="project__link">GitHub</a>
           </div>
